@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker build -t tristangva/react-test -f ./client/Dockerfile.dev ./client
-      - run: docker run =e CI=true tristangva/react-test:latest npm test
+      - run: docker run -e CI=true Tristangva/react-test npm test
 
       - run: docker build -t tristangva/multi-client-10014 ./client
       - run: docker build -t tristangva/multi-nginx-10-14 ./nginx
