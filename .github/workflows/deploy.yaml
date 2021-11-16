@@ -26,8 +26,8 @@ jobs:
       - run: docker build -t tristangva/multi-server-10-14 ./server
       - run: docker build -t tristangva/multi-worker-10-14 ./worker
  
-      - run: docker push tristangva/multi-client-10-14
       - run: docker push tristangva/multi-nginx-10-14
+      - run: docker push tristangva/multi-client-10-14
       - run: docker push tristangva/multi-server-10-14
       - run: docker push tristangva/multi-worker-10-14
  
