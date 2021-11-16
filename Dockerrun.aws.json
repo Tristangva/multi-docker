@@ -11,7 +11,7 @@
         {
             "name": "server",
             "image": "tristangva/multi-server",
-            "hostname": "http://api",
+            "hostname": "api",
             "essential": false,
             "memory": 128
         },
